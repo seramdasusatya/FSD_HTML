@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Form</title>
+	<script type="text/javascript">
+		function mysubfunc() {
+			alert("Successfully Submitted!!");
+		}
+		function myresfunc() {
+			alert("Successfully Resetted!!");
+		}
+	</script>
+</head>
+<body style="background-color: lightgreen;">
+	<form style=" background-color: whitesmoke; max-width: 300px; box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.5); text-align: left;margin-left: 500px;">
+		<fieldset>
+			<legend>Form</legend>
+		<p>
+			<input type="image" src="../images/logo.png" width="50px" height="50px">
+		</p>
+		<p><label for="fname">First Name:</label>
+		<input type="text" name="fname" placeholder="Enter your First name" autofocus autocomplete="off"><br><br>
+		<label for="lname">Last Name:</label>
+		<input type="text" name="lname" placeholder="Enter your Last name" required></p>
+		<label for="fname">Date of Birth: </label>
+		<input type="date" name="date"><br>
+		<p><label for="gender">Gender:</label>
+		<label for="gender">Male:</label>
+		<input type="radio" name="gender">
+		<label for="gender">Female:</label>
+		<input type="radio" name="gender"></p>
+		<p>
+			<label for="range">Age</label>
+			<input type="range" name="range">
+		</p>
+		<p>
+			Upload Your Pic:<br><br>
+			<input type="file">
+		</p>
+		<p><label for="mail">Email:</label>
+		<input type="email" name="mail" placeholder="Enter your Email" value="sss@gmail.com" readonly><br><br>
+		<label for="num">Mobile:</label>
+		<input type="tel" name="num" placeholder="Mobile Number" maxlength="10"></p>
+		<p><label for="pass">Password:</label>
+		<input type="password" name="pass" placeholder="Password"></p>
+		<p><label for="box">Select your language:</label><br>
+		<input type="checkbox" name="box">Telugu<br>
+		<input type="checkbox" name="box">English<br>
+		<input type="checkbox" name="box">Hindi<br></p>
+		<p>
+			Programming Languages you known:<br><br> 
+			<select>
+				<option>Select</option>
+				<option>Java</option>
+				<option>C++</option>
+				<option>Python</option>
+				<option>C</option>
+			</select>
+		</p>
+		<p><label for="col">
+			Select a color
+		</label><br>
+		<input type="color" name="col" disabled></p>
+		<p><label for="address">
+			Address:
+		</label><br>
+		<textarea></textarea></p>
+
+		<p>
+			<input type="submit" onclick="mysubfunc()">
+			<input type="reset" onclick="myresfunc()">
+		</p>
+		</fieldset>
+	</form>
+
+</body>
+</html>
