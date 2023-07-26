@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Table</title>
+</head>
+<style>
+	table, th, td, tr{
+		color: white;
+		text-align: center;
+		height: 100px;
+		width: 1000px;
+		border: 1px solid darkred;
+		background-color: black;
+	}
+	table.center{
+		margin-left: auto;
+		margin-right: auto;
+	}
+</style>
+<body bgcolor="grey">
+		<table  cellspacing="1" class="center border">
+			<thead>
+				<tr>
+					<th>S.No</th>
+					<th>NAME</th>
+					<th>COLLEGE</th>
+					<th>BRANCH</th>
+					<th colspan="2">ROLL No & MAIL</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr>
+					<td >1</td>
+					<td>Shyam</td>
+					<td rowspan="4">AEC</td>
+					<td rowspan="4">CSE</td>
+					<td>I9</td>
+					<td>SSS@gamil.com</td>
+				</tr>
+				<tr>
+					<td>2</td>
+					<td>Anil</td>
+					<td>J0</td>
+					<td>Anil@gmail.com</td>
+				</tr>
+				<tr>
+					<td>3</td>
+					<td>Surya</td>
+					<td>I5</td>
+					<td>surya@gmail.com</td>
+				</tr>
+				<tr>
+					<td>4</td>
+					<td>Sridhar</td>
+					<td>I2</td>
+					<td>sridhar@gmail.com</td>
+				</tr>
+			</tbody>
+		</table>
+</body>
+</html>
